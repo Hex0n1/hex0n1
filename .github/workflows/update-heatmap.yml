@@ -28,3 +28,8 @@ jobs:
         with:
           commit_message: "chore: refresh contribution heatmap [skip ci]"
           file_pattern: "data/contributions.json contrib-heatmap.svg"
+          # Commit as the Actions bot so these automated commits don't count
+          # as your own contributions (otherwise every day shows activity).
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "41898299+github-actions[bot]@users.noreply.github.com"
+          commit_author: "github-actions[bot] <41898299+github-actions[bot]@users.noreply.github.com>"
